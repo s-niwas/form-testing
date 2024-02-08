@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .grid-content {
+    @apply grid gap-x-4 grid-cols-xs justify-center px-4 md:px-8 md:grid-cols-md lg:px-0 lg:gap-6 lg:grid-cols-lg xl:grid-cols-xl;
+  }
+  .input {
+    @apply w-full py-3 px-[14px] outline-none border-transparent focus-visible:shadow-none;
+  }
+}
+
+.super-primary {
+  background: linear-gradient(90deg, #3333ff 0%, #f83a57 127.05%);
+}

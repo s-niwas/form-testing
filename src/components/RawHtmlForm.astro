@@ -1,0 +1,24 @@
+---
+// @ts-nocheck
+
+import RawHtmlFormValidation from "./rawHtmlFormValidation";
+const { title, body } = Astro.props;
+---
+
+<div
+  id="rawhtmlform"
+  class="flex flex-col items-center justify-center p-6 bg-white text-black"
+>
+  <div class="max-w-md mx-auto">
+    <RawHtmlFormValidation
+      buttonLabel="Submit Raw HTML Form"
+      platformFlag="Contact page"
+      client:load
+    >
+      <div slot="formContent" class="flex flex-col space-y-1.5 pb-6">
+        <h1>{title}</h1>
+        <p>{body}</p>
+      </div>
+    </RawHtmlFormValidation>
+  </div>
+</div>

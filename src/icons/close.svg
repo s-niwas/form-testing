@@ -1,0 +1,7 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="24"
+    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round"
+    class="sb-icon sb-icon--lucide sb-textfield__icon sb-textfield__icon--right">
+    <path d="M18 6 6 18" stroke="#1B243F" fill="none" stroke-width="2px"></path>
+    <path d="m6 6 12 12" stroke="#1B243F" fill="none" stroke-width="2px"></path>
+</svg>

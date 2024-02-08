@@ -1,0 +1,56 @@
+---
+import ZohoFormValidation from "./FormValidation.jsx";
+interface Props {
+  title: string;
+  body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+<div
+  id="forms"
+  class="flex flex-col items-center justify-center bg-white text-black"
+>
+  <script
+    type="text/javascript"
+    src="https://fpjb-zc1.maillist-manage.in/js/optin.min.js"
+    onload="setupSF('sf3z55f4139bdf0e6f89b17bb19c6f8da5100387094f3f588029eb5064caf6747ab8','ZCFORMVIEW',false,'acc',false,'2')"
+  ></script>
+  <script type="text/javascript">
+    function runOnFormSubmit_sf3z55f4139bdf0e6f89b17bb19c6f8da5100387094f3f588029eb5064caf6747ab8(
+      th
+    ) {}
+  </script>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+
+  <div class="max-w-md ">
+    <div class="flex flex-col space-y-1.5 p-6">
+      <h1>{title}</h1>
+      <p>{body}</p>
+    </div>
+    <ZohoFormValidation buttonLabel="Submit" client:load />
+  </div>
+</div>
+
+<div
+  id="zcOptinOverLay"
+  oncontextmenu="return false"
+  style="display:none;text-align: center; background-color: rgb(0, 0, 0); opacity: 0.5; z-index: 100; position: fixed; width: 100%; top: 0px; left: 0px; height: 988px;"
+>
+</div>
+<div
+  id="zcOptinSuccessPopup"
+  style="display:none;z-index: 9999;width: 800px; height: 40%;top: 84px;position: fixed; left: 26%;background-color: #FFFFFF;border-color: #E6E6E6; border-style: solid; border-width: 1px;  box-shadow: 0 1px 10px #424242;padding: 35px;"
+>
+  <span
+    style="position: absolute;top: -16px;right:-14px;z-index:99999;cursor: pointer;"
+    id="closeSuccess"
+  >
+    <img
+      src="https://fpjb-zc1.maillist-manage.in/images/videoclose.png"
+      loading="lazy"
+    />
+  </span>
+  <div id="zcOptinSuccessPanel"></div>
+</div>
