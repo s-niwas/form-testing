@@ -16,7 +16,7 @@ const { title, body } = Astro.props;
       client:load
     >
       <div slot="formContent" class="flex flex-col space-y-1.5 pb-6">
-        <h1>{title}</h1>
+        <h1 class="font-bold text-xl md:text-2xl text-blue-500">{title}</h1>
         <p>{body}</p>
       </div>
     </RawHtmlFormValidation>

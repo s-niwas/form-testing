@@ -3,9 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import "../global.css";
 import Form from "../components/Form.astro";
 import RawHtmlForm from "../components/RawHtmlForm.astro";
+import WordpressForm from "../components/WordpressForm.astro";
+import WebsiteForm from "../components/WebsiteForm.astro";
 ---
 
-<Layout title="Welcome to Astro">
+<Layout title="Zoho Forms">
   <main>
     <svg
       class="astro-a"
@@ -35,15 +37,25 @@ import RawHtmlForm from "../components/RawHtmlForm.astro";
         </linearGradient>
       </defs>
     </svg>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <h1>Welcome to <span class="text-gradient">Zoho Forms</span></h1>
     <ul role="list" class="link-card-grid">
       <Form
         title="No Css Form"
         body="Used No CSS Form.Learn how Zoho form works and explore the official API docs."
       />
-      <RawHtmlForm
+      <!-- Raw HTML form and no script form's we cannot handle the form sucess popup after the form gets submitted -->
+      <!-- 
+        <RawHtmlForm
         title="Raw HTML"
         body="Use Raw HTML Form.Learn how Zoho form works and explore the official API docs."
+      /> -->
+      <WordpressForm
+        title="WordPress Form"
+        body="Used WordPress Form.Learn how Zoho form works and explore the official API docs."
+      />
+      <WebsiteForm
+        title="Website Form"
+        body="Used Website Form.Learn how Zoho form works and explore the official API docs."
       />
     </ul>
   </main>
